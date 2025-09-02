@@ -23,7 +23,3 @@ int main() {
 }
 
 
-/* Conclusion: Fundamental problem of this design, 
-change in the tax rate affect all the codebase 
-
-*/
