@@ -1,0 +1,20 @@
+/*
+Function return types in a subtype must be covariant: member
+functions of the subtype can return a type that is itself a subtype of the
+return type of the corresponding member function in the super type.
+*/
+
+struct Base{ /* ... */}
+struct Derived : public Base{ /* ... */}
+
+
+struct X 
+{
+    virtual ~X() = default;
+    virtual Base* f(); 
+}; 
+
+struct Y : public X 
+{
+    Derived* f() override;
+};
