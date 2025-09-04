@@ -23,8 +23,6 @@ int main()
     return EXIT_SUCCESS;
 }
 
-
-
 // Better option: Build on the overload set of free begin and end functions
 
 template<typename Range>

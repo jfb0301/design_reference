@@ -22,7 +22,7 @@ void swap( Widget& w1, Widget& w2)
 {
     using std::swap;
     swap( w1.i, w2.i);
-    swap( w1.j, w2.j ); 
+    // swap( w1.j, w2.j );  
 }
 
 
