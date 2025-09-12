@@ -6,7 +6,11 @@ void Calculator::compare( std::unique_ptr<CalculatorCommand> command)
     stack._push( std::move(command) );
 }
 
-void Calculator::undoLast() {
+void Calculator::undoLast() 
+
+{
+    if ( stack_.empty() ) return; 
+
     auto command = std::move(stack.top());
     stack_.pop(); 
 
