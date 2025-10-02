@@ -33,4 +33,7 @@ StrongType<T, Tag>
 // Provide mixins in the form of optional template arguments  
 
 template< typename T, typename Tag, template<typename>, class... Skills >
+struct StrongType
+    : private : Skills< StrongType<T, Tag, Skills...> >...
+    {   /* ... */   }; 
 
